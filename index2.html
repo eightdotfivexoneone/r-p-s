@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,200,300,400,500,600,700|IBM+Plex+Serif:100,200,300,300i,400,400i,700i" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Notorius RPS</title>
+</head>
+
+<body>
+
+  <h1>Type [R] for rock, [P] for paper, or [S] for scissors.</h1> 
+
+    <p>
+      Input your age and click the button.
+      <br>
+        <input id="age" value="18" />
+      <br>
+      <button onClick="myFunction()">Find Out!</button>
+
+    </p>
+
+
+     <p id="demo"></p>
+
+
+    <p class="reference">Reference: <a href="https://www.youtube.com/watch?v=Tio88WjwFO0&t=0s&list=PLgJ8UgkiorCmEChEWfh7sxPvQwYAx3Kt0&index=3" target="_blank">FSF - Unit 3 (Javascript)</p></a>
+
+    <!-- <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>  -->
+
+
+  <script>
+    
+    function myFunction() {
+      var age, votable;
+      age = document.getElementById("age").value;
+      votable = (age < 18) ? "Too young":"Old enough";
+      document.getElementById("demo").innerHTML = votable + " to vote!";
+
+    }
+  
+  </script>
+
+</body>
+</html>
