@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="game">
-
+  <h1>Type [R] for rock, [P] for paper, or [S] for scissors.</h1>
 
 </div>
 <!-- User makes a choice -->
@@ -84,9 +84,9 @@ if (userGuess=="r" || userGuess=="p" || userGuess =="s") {
           alert("Please choose r, p, or s.");
   }
 
-  var html = "<h1>Type [R] for rock, [P] for paper, or [S] for scissors.</h1>" + "<p>Wins: " + wins + "</p>" +
-  "<p>Losses: " + losses + "</p>" +
-  "<p>Ties: " + ties + "</p>";
+  var html = "<h1>Type [R] for rock, [P] for paper, or [S] for scissors.</h1>" + "<p>Wins:  " + wins + "  |  " +
+  " Losses:  " + losses + "  |  " +
+  " Ties: " + ties + "</p>";
 
 document.querySelector("#game").innerHTML = html;
 
@@ -98,7 +98,6 @@ document.querySelector("#game").innerHTML = html;
 
     <!-- <p class="reference">Reference: <a href="https://www.youtube.com/watch?v=Tio88WjwFO0&t=0s&list=PLgJ8UgkiorCmEChEWfh7sxPvQwYAx3Kt0&index=3" target="_blank"> FSF - Unit 3 (Javascript) </p></a> -->
 
-    <!-- <a href="https://www.w3schools.com" target="_blank">Visit W3Schools.com!</a>  -->
 
 
 
